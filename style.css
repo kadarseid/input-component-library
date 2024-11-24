@@ -7,7 +7,9 @@ input {
 }
 
 .input {
-  border: 1px solid #aaa;
+  --border-color: #aaa;
+
+  border: 1px solid var(--border-color);
   outline: none;
   font-size: inherit;
   padding: 0.5em;
@@ -15,26 +17,24 @@ input {
 }
 
 .input:focus {
-  border-color: #00aaff;
-  box-shadow: 0 0 5px 0 #00aaff;
+  --border-color: #0af;
+  box-shadow: 0 0 5px 0 var(--border-color);
 }
 
 .input-success {
-  border-color: #27ae60;
+  --border-color: #27ae60;
 }
 
 .input-success:focus {
-  border-color: #00ff00;
-  box-shadow: 0 0 5px 0 #00ff00;
+  --border-color: #0f0;
 }
 
 .input-error {
-  border-color: #eb5757;
+  --border-color: #eb5757;
 }
 
 .input-error:focus {
-  border-color: #ff0000;
-  box-shadow: 0 0 5px 0 #ff0000;
+  --border-color: #f00;
 }
 
 .input-large {
